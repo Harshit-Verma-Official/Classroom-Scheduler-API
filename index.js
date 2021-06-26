@@ -2,7 +2,7 @@ const mysql = require("mysql");
 const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
-const PORT = 3000;
+const PORT = 8080;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -124,6 +124,6 @@ app.post("/api/tasks", (req, res) => {
   );
 });
 
-app.listen(process.env.PORT || PORT, () =>
-  console.log(`Server running in port ${process.env.PORT || PORT}`)
+app.listen(process.env.PORT, () =>
+  console.log(`Server running in port ${process.env.PORT}`)
 );
