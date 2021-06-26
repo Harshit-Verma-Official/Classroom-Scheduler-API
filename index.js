@@ -21,10 +21,10 @@ app.use(function (req, res, next) {
 
 // Connection
 let mySqlConnection = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "1234",
-  database: "teachers",
+  host: process.env.MYSQL_ADDON_HOST,
+  database: process.env.MYSQL_ADDON_DB,
+  user: process.env.MYSQL_ADDON_USER,
+  password: process.env.MYSQL_ADDON_PASSWORD,
   multipleStatements: true,
 });
 
