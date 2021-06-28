@@ -11,19 +11,19 @@ This is an API for back-end of [Classroom Scheduler](https://github.com/harshitv
 6. POST a task : https://app-51e39946-6e89-4b4d-a326-8b8d40035f4e.cleverapps.io/api/tasks
   * task_id must be 0.
   * Body of request : {
-                        ```"task_id": 0,
+                        "task_id": 0,
                         "teacher_id": 6,
                         "task_name": "Leetcode",
                         "task_date": "2021-06-27T00:00:00.000Z",
                         "start_time": "04:00:00",
                         "end_time": "05:00:00"
-                      }```
+                      }
 7. Update a task : https://app-51e39946-6e89-4b4d-a326-8b8d40035f4e.cleverapps.io/api/tasks
   * Body of request : {
-                        ```"task_id": 8,
+                        "task_id": 8,
                         "teacher_id": 6,
                         "task_name": "Leetcode",
                         "task_date": "2021-06-27T00:00:00.000Z",
                         "start_time": "04:00:00",
                         "end_time": "05:00:00"
-                      }```
+                      }
